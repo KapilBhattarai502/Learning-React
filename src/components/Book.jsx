@@ -2,6 +2,7 @@ import React from 'react'
 
 const Book = (props) => {
     const {img,author,name} =props.bookDetails;
+   
     console.log(props);
   return (
     <div style={{
@@ -15,7 +16,8 @@ const Book = (props) => {
 
     }}>
     <img style={{
-        height:"40vmin"
+        height:"40vmin",
+        width:"40vmin"
     }} src={img} alt={name}></img>
     <h3>{name}</h3>
     <h6>{author}</h6>
