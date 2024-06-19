@@ -5,7 +5,7 @@ const Actorlist = () => {
     const actorLists=[
         {
             id:1,
-            img:"https:/upload.wikimedia.org/wikipedia/commons/thumb/8/89/Katharine_Hepburn_publicity_photograph.jpg/220px-Katharine_Hepburn_publicity_photograph.jpg",
+            img:"https://imageio.forbes.com/specials-images/imageserve/6633cecacf0f8b7ca0657763/Lauren-Bacall/0x0.jpg?format=jpg&crop=2649,1767,x0,y150,safe&width=1440",
             name:"Katherine Hepburn",
             about:"One of the greatest actors of all time,Katherine Hepbum was born 1905"
         
@@ -19,7 +19,7 @@ const Actorlist = () => {
         },
         {
         id:3,
-        img:"https://imageio.forbes.com/specials-images/imageserve/6633cd5eec748a84a05db6c4/Michelle-Yeoh-accepts-the-2023-Oscar-for-Best-Actress-in-a-Leading-Role-/960x0.jpg?format=jpg&width=1440",
+        img:"https://imageio.forbes.com/specials-images/imageserve/6633cd8a3e10d999b517f4ff/Meryl-Streep-And-Raul-Julia/960x0.jpg?format=jpg&width=1440",
         name:"Raul Julia",
         about:"Julia is notable for his commitment to roles. While his final film, 1994’s Street Fighter, was critically panned, his performance has been praised for his steadfast presence and control.",
         
@@ -33,7 +33,12 @@ const Actorlist = () => {
 
     ]
   return (
-    <div>
+    <div style={{
+      display:"flex",
+      justifyContent:"flex-start",
+      flexWrap:"wrap",
+      gap:"1rem"
+    }}>
     
     {actorLists.map((item,index,self)=>{
       return <Actor key={index} actorDetails={item}/>

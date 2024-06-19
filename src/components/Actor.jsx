@@ -4,10 +4,26 @@ const Actor = (props) => {
     const {img,name,about}=props.actorDetails;
 
   return (
-    <div>
-    <img src={img} alt='actorImage'/>
-    <h3>{name}</h3>
-    <p>{about}</p>
+    <div style={{
+      width:"40vmin",
+      boxShadow:"1px 1px 3px black",
+      padding:"25px",
+      borderRadius:"10px",
+      backgroundColor:"#242424"
+
+    }}>
+    <img style={{
+      objectFit:"contain",
+      height:"60%",
+      width:"100%"
+    }} src={img} alt='actorImage'/>
+    <h3 style={{
+      fontSize:"2vmin"
+    }}>{name}</h3>
+    <p style={{
+      textAlign:"left",
+      fontSize:"1.5vmin"
+    }}>{about}</p>
     
     </div>
   )
