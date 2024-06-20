@@ -31,7 +31,12 @@ const Actorlist = () => {
         }
         
 
-    ]
+    ];
+
+    function handleOnChange(event){
+      // alert('Typing....');
+      console.log(event.target.value);
+    }
   return (
     <div style={{
       display:"flex",
@@ -39,10 +44,13 @@ const Actorlist = () => {
       flexWrap:"wrap",
       gap:"1rem"
     }}>
+
+   
     
     {actorLists.map((item,index,self)=>{
       return <Actor key={index} actorDetails={item}/>
     })}
+    
     
       
     </div>
