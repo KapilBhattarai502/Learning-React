@@ -9,7 +9,7 @@ const Actor = (props) => {
       boxShadow:"1px 1px 3px black",
       padding:"25px",
       borderRadius:"10px",
-      backgroundColor:"#242424"
+      backgroundColor:"#545252"
 
     }}>
     <img style={{

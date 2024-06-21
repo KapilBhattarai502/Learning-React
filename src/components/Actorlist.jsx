@@ -47,7 +47,7 @@ const Actorlist = () => {
 
    
     
-    {actorLists.map((item,index,self)=>{
+    {actorLists.forEach((item,index,self)=>{
       return <Actor key={index} actorDetails={item}/>
     })}
     
