@@ -32,6 +32,7 @@ const SignupForm = () => {
         <label htmlFor="email">Email Address</label>
         <Field name="email" type="email" />
         <ErrorMessage name="email" />
+        
 
         <button type="submit">Submit</button>
       </Form>
