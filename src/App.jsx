@@ -3,6 +3,7 @@ import "./App.css"
 import SignupForm from './components/SignUpForm'
 import Counter from './components/Counter'
 import IncrementDecrement from './components/IncrementDecrement'
+import Actorlist from './components/Actorlist'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
 
     {/* <SignupForm/> */}
     {/* <Counter/> */}
-    <IncrementDecrement/>
+    {/* <IncrementDecrement/> */}
+    <Actorlist/>
     
     </div>
     
