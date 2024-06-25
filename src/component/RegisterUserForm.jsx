@@ -20,7 +20,7 @@ const RegisterUserForm = () => {
     >
       {({handleSubmit,errors,touched,getFieldProps}) => (
         <form onSubmit={formik.handleSubmit}>
-          <label htmlFor="fullName">Full Name</label>
+          <label>Full Name</label>
           <input
             id="fullName"
             type="text"
@@ -34,7 +34,8 @@ const RegisterUserForm = () => {
 
          
           
-          <button type="submit">Submit</button>
+          
+          <Button type="submit" variant="contained">Submit</Button>
         </form>
       )}
     </Formik>
