@@ -44,3 +44,9 @@
 .homeheading{
   color: green;
 }
+.Api-Data{
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+  
+}
