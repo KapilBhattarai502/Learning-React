@@ -10,14 +10,16 @@ const GithubUser = () => {
         const getdata=async()=>{
             try {
                 setIsLoading(true);
-                const response=await axios.get("https://api.github.com/users");
+                const response=await axios.get("http://localhost:5500/get/todolist");
                 console.log(response.data);
+                
                 setUsers(response.data);
                 setIsLoading(false);
                 
             } catch (error) {
                 setIsError(true);
                 setIsLoading(false); 
+                console.log(error)
                 
 
 
@@ -36,11 +38,16 @@ const GithubUser = () => {
     }
   return (
     
-    <div>
+    <div style={{
+        display:'flex',
+        flexDirection:'column',
+        gap:"1rem"
+    }}> 
         {users.map((item,index,self)=>{
-            return (<div className='Api-Data' key={item.id}>
-            <h4>Name:{item.login}</h4>
-            <h5>Id:{item.id}</h5>
+            return (<div className='Api-Data' key={item._id}>
+            <h2>Date:{item.date}</h2>
+            <h3>Title:{item.title}</h3>
+            <h5>Description:{item.description}</h5>
                
             </div>)
 
